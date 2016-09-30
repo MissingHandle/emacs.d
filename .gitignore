@@ -2,3 +2,7 @@ auto-save-list/
 backups/
 .cask/
 elpa/
+\#*
+*~
+.\#*
+ido.last
