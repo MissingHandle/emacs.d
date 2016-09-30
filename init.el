@@ -16,6 +16,12 @@
                          ("tromey" . "http://tromey.com/elpa/")))
 (package-initialize)                ;; Initialize & Install Package
 
+;;
+;; Icicles
+;; 
+(require 'icicles)
+(icy-mode 1)
+
 
 ;;
 ;; Use IDO mode
@@ -26,6 +32,15 @@
 (setq ido-use-filename-at-point 'guess) ;; try to guess file type i think?
 (setq ido-create-new-buffer 'always)    ;; Don’t ask to create new buffers, just do.
 
+
+;;
+;; Magit
+;;
+(require 'magit)
+(setq magit-wip-after-save-mode t)
+(setq magit-wip-after-apply-mode t)
+(setq magit-wip-before-change-mode t)
+(add-to-list 'magit-no-confirm 'safe-with-wip)
 
 
 ;;;;;;;;;;;;;
@@ -39,6 +54,7 @@
 
 (global-set-key (kbd "C-\\") 'undo)
 (define-key global-map (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "C-x g") 'magit-status)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;
