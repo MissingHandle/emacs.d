@@ -1,5 +1,6 @@
 (source gnu)
 (source melpa)
+(source org)
 
 (depends-on "bind-key")
 (depends-on "cask")
