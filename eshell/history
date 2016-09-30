@@ -1,0 +1,27 @@
+ls
+cd ..
+pwd
+ls
+cd Code/
+ls
+rm emacs/
+rm -rf emacs/
+ls
+lsl
+echo eshell-aliases-file
+echo $eshell-aliases-file
+edit $eshell-aliases-file
+open $eshell-aliases-file
+open /home/gabe/.emacs.d/eshell/alias
+emacs /home/gabe/.emacs.d/eshell/alias
+ll
+ll
+ll
+ls -l
+alias ll 'ls -l $*'
+ll
+open init.el
+open ./init.el
+emacs ./init.el
+alias emacs 'find-file $1'
+emacs ./init.el
